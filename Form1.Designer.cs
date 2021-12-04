@@ -34,6 +34,8 @@ namespace tp1_form
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,11 +45,11 @@ namespace tp1_form
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btn_confirmer = new System.Windows.Forms.Button();
+            this.btn_annuler = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_ajout
@@ -58,11 +60,11 @@ namespace tp1_form
             this.btn_ajout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ajout.ForeColor = System.Drawing.Color.White;
             this.btn_ajout.Image = ((System.Drawing.Image)(resources.GetObject("btn_ajout.Image")));
-            this.btn_ajout.Location = new System.Drawing.Point(23, 163);
+            this.btn_ajout.Location = new System.Drawing.Point(20, 148);
             this.btn_ajout.Name = "btn_ajout";
-            this.btn_ajout.Size = new System.Drawing.Size(160, 108);
+            this.btn_ajout.Size = new System.Drawing.Size(161, 106);
             this.btn_ajout.TabIndex = 0;
-            this.btn_ajout.Text = "btn_add";
+            this.btn_ajout.Text = "Ajouter";
             this.btn_ajout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ajout.UseVisualStyleBackColor = false;
             this.btn_ajout.Click += new System.EventHandler(this.button1_Click);
@@ -74,11 +76,11 @@ namespace tp1_form
             this.btn_delete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.Color.White;
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
-            this.btn_delete.Location = new System.Drawing.Point(23, 277);
+            this.btn_delete.Location = new System.Drawing.Point(20, 253);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(160, 117);
+            this.btn_delete.Size = new System.Drawing.Size(161, 106);
             this.btn_delete.TabIndex = 1;
-            this.btn_delete.Text = "btn_delete";
+            this.btn_delete.Text = "Supprimer";
             this.btn_delete.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.button2_Click);
@@ -91,11 +93,11 @@ namespace tp1_form
             this.btn_edit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit.ForeColor = System.Drawing.Color.White;
             this.btn_edit.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit.Image")));
-            this.btn_edit.Location = new System.Drawing.Point(23, 400);
+            this.btn_edit.Location = new System.Drawing.Point(19, 365);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(161, 106);
             this.btn_edit.TabIndex = 2;
-            this.btn_edit.Text = "btn_edit";
+            this.btn_edit.Text = "Modifier";
             this.btn_edit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_edit.UseVisualStyleBackColor = false;
             this.btn_edit.Click += new System.EventHandler(this.button3_Click);
@@ -103,6 +105,8 @@ namespace tp1_form
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btn_annuler);
+            this.panel1.Controls.Add(this.btn_confirmer);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btn_ajout);
@@ -110,8 +114,30 @@ namespace tp1_form
             this.panel1.Controls.Add(this.btn_edit);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(198, 713);
+            this.panel1.Size = new System.Drawing.Size(198, 729);
             this.panel1.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(27, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(144, 25);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Espace Etudiant";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(19, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(161, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
@@ -171,7 +197,7 @@ namespace tp1_form
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(361, 579);
+            this.comboBox1.Location = new System.Drawing.Point(361, 611);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(331, 24);
             this.comboBox1.TabIndex = 13;
@@ -181,7 +207,7 @@ namespace tp1_form
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(230, 535);
+            this.label4.Location = new System.Drawing.Point(230, 564);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(164, 23);
             this.label4.TabIndex = 14;
@@ -200,40 +226,52 @@ namespace tp1_form
             this.groupBox1.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(234, 38);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(514, 410);
+            this.groupBox1.Size = new System.Drawing.Size(514, 433);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Espace Etudiant";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // pictureBox1
+            // btn_confirmer
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.btn_confirmer.BackColor = System.Drawing.Color.Black;
+            this.btn_confirmer.FlatAppearance.BorderSize = 0;
+            this.btn_confirmer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_confirmer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_confirmer.ForeColor = System.Drawing.Color.White;
+            this.btn_confirmer.Image = ((System.Drawing.Image)(resources.GetObject("btn_confirmer.Image")));
+            this.btn_confirmer.Location = new System.Drawing.Point(19, 467);
+            this.btn_confirmer.Name = "btn_confirmer";
+            this.btn_confirmer.Size = new System.Drawing.Size(161, 106);
+            this.btn_confirmer.TabIndex = 17;
+            this.btn_confirmer.Text = "Confirmer";
+            this.btn_confirmer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_confirmer.UseVisualStyleBackColor = false;
+            this.btn_confirmer.Click += new System.EventHandler(this.btn_confirmer_Click);
             // 
-            // label5
+            // btn_annuler
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 25);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Espace Etudiant";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.btn_annuler.BackColor = System.Drawing.Color.Black;
+            this.btn_annuler.FlatAppearance.BorderSize = 0;
+            this.btn_annuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_annuler.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_annuler.ForeColor = System.Drawing.Color.White;
+            this.btn_annuler.Image = ((System.Drawing.Image)(resources.GetObject("btn_annuler.Image")));
+            this.btn_annuler.Location = new System.Drawing.Point(19, 579);
+            this.btn_annuler.Name = "btn_annuler";
+            this.btn_annuler.Size = new System.Drawing.Size(161, 106);
+            this.btn_annuler.TabIndex = 18;
+            this.btn_annuler.Text = "Annuler";
+            this.btn_annuler.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_annuler.UseVisualStyleBackColor = false;
+            this.btn_annuler.Click += new System.EventHandler(this.btn_annuler_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(788, 697);
+            this.ClientSize = new System.Drawing.Size(788, 720);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
@@ -244,9 +282,9 @@ namespace tp1_form
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,6 +307,8 @@ namespace tp1_form
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_annuler;
+        private System.Windows.Forms.Button btn_confirmer;
     }
 }
 

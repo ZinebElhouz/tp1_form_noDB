@@ -8,7 +8,7 @@ namespace tp1_form
 {
     class Etudiant
     {
-        public string cin { get; set; }
+        public int id { get; set; }
         public string nom { get; set; }
         public string prenom { get; set; }
 
